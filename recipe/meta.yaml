@@ -1,5 +1,5 @@
 {% set name = "xeus-sql" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sql/archive/{{ version }}.tar.gz
-  sha256: 5f37f2fcd171c0209faf97ea8f82afc813f162407f3c38ef78688bb3e76ed42b 
+  sha256: f88d94dac66c49280b5a4ab150c51dcb55e5c9cc4e78d47cb87535186f00b4e1 
 
 build:
   number: 0
