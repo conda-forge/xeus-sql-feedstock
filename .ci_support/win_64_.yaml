@@ -10,4 +10,4 @@ pin_run_as_build:
 target_platform:
 - win-64
 zeromq:
-- 4.3.3
+- 4.3.4
