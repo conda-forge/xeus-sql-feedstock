@@ -1,5 +1,5 @@
 {% set name = "xeus-sql" %}
-{% set version = "0.0.8" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sql/archive/{{ version }}.tar.gz
-  sha256: f88d94dac66c49280b5a4ab150c51dcb55e5c9cc4e78d47cb87535186f00b4e1 
+  sha256: 2b541069ac6aa4cd4ec0f7c40910b383a2ed6fe41242ade6de15a529da0d919f
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -43,7 +43,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Jupyter kernel for SQL based on xeus and SOCI'
+  summary: Jupyter kernel for SQL based on xeus and SOCI
   doc_url: https://xeus-sql.readthedocs.io
 
 extra:
