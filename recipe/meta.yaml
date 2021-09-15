@@ -1,5 +1,5 @@
 {% set name = "xeus-sql" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sql/archive/{{ version }}.tar.gz
-  sha256: 8824f4edccfb8caf38dd97d6d4f7fd632b14528fae6c9da48194ea2483104ad1
+  sha256: 44ecbfee1e11532637c2552391517f4c79b7e6f84143f3b7e5d00dba2d56d955
 
 build:
   number: 0
@@ -20,9 +20,9 @@ requirements:
   host:
     - cpp-tabulate >=1.3,<2
     - cppzmq
-    - nlohmann_json
+    - nlohmann_json <3.10
     - soci-core
-    - xeus >=1.0.0,<2.0.0
+    - xeus >=2.0.0,<3.0.0
     - xproperty >=0.11.0,<0.12.0
     - xtl
     - xvega >=0.0.10
