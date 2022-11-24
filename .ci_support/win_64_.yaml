@@ -3,11 +3,6 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2017
-pin_run_as_build:
-  zeromq:
-    max_pin: x.x.x
+- vs2019
 target_platform:
 - win-64
-zeromq:
-- 4.3.4
