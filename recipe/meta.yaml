@@ -1,5 +1,5 @@
 {% set name = "xeus-sql" %}
-{% set version = "0.1.5" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sql/archive/{{ version }}.tar.gz
-  sha256: 9a1c3bd70847ecaedf1300476bb026ecc7fc003f7d457911e0deab393e9e533e 
+  sha256: 74b9d4a1c051aa9ba49ff859986634f0598f70196ffbd1c21a176333675bd4e3
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -22,12 +22,11 @@ requirements:
     - cppzmq
     - nlohmann_json <3.10
     - soci-core
-    - xeus >=2.0.0,<3.0.0
+    - xeus-zmq >=1.0.1,<2
     - xproperty >=0.11.0,<0.12.0
     - xtl
     - xvega >=0.0.10
     - xvega-bindings >=0.0.10
-    - zeromq
   run:
     # xvega and xvega-bindings are missing run exports
     - {{ pin_compatible('xvega', max_pin='x.x') }}
