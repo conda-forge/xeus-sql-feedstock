@@ -9,7 +9,9 @@ Package license: BSD-3-Clause
 
 Summary: Jupyter kernel for SQL based on xeus and SOCI
 
-Documentation: https://xeus-sql.readthedocs.io
+Development: https://github.com/jupyter-xeus/xeus-xsql
+
+Documentation: https://xeus-sql.readthedocs.io/
 
 Current build status
 ====================
