@@ -41,7 +41,8 @@ tests:
   - package_contents:
       files:
         exists:
-          - ${{ "Library/" if win  }}bin/xsql${{ ".exe" if win }}
+          - ${{ "Library/" if win }}bin/xsql${{ ".exe" if win }}
+          - ${{ "Library/" if win }}share/jupyter/kernels/xsql/kernel.json
 
 about:
   homepage: https://github.com/jupyter-xeus/xeus-xsql
