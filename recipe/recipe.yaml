@@ -1,5 +1,5 @@
 context:
-  version: "0.3.2"
+  version: "0.4.0"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sql/archive/${{ version }}.tar.gz
-  sha256: e7904118840a1e4782510c01a21ff05c5c194a7fd92c79262f351cdc17c501f4
+  sha256: 52099baaddc963c1093fc46415da24c3f1f4652d8168e8cb1f9bb278d281f1c9
 
 build:
   number: ${{ build_number }}
