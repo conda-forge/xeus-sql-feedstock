@@ -1,0 +1,11 @@
+--- a/cmake/FindSoci.cmake
++++ b/cmake/FindSoci.cmake
+@@ -46,7 +46,7 @@
+ #
+ FIND_LIBRARY(
+     SOCI_LIBRARY
+-    NAMES soci_core soci_core_4_0
++    NAMES soci_core soci_core_4_1 soci_core_4_0
+     HINTS ${SOCI_INCLUDE_DIR}/../../lib
+     PATH_SUFFIXES lib${LIB_SUFFIX})
+ MARK_AS_ADVANCED(SOCI_LIBRARY)
