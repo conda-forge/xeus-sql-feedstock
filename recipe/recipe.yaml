@@ -1,6 +1,6 @@
 context:
   version: "0.4.0"
-  build_number: 0
+  build_number: 1
 
 package:
   name: xeus-sql
@@ -9,6 +9,8 @@ package:
 source:
   url: https://github.com/jupyter-xeus/xeus-sql/archive/${{ version }}.tar.gz
   sha256: 52099baaddc963c1093fc46415da24c3f1f4652d8168e8cb1f9bb278d281f1c9
+  patches:
+    - 0001-findsocicmake.patch
 
 build:
   number: ${{ build_number }}
