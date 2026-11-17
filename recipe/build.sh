@@ -1,6 +1,8 @@
 #!/bin/bash
 
 cmake ${CMAKE_ARGS} -DCMAKE_BUILD_TYPE=Release     \
+      -DCMAKE_AR="$(command -v ${AR})" \
+      -DCMAKE_RANLIB="$(command -v ${RANLIB})" \
       -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DCMAKE_PREFIX_PATH=$PREFIX    \
       -DCMAKE_INSTALL_LIBDIR=lib     \

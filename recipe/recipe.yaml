@@ -1,6 +1,6 @@
 context:
-  version: "0.4.0"
-  build_number: 1
+  version: "0.5.0"
+  build_number: 0
 
 package:
   name: xeus-sql
@@ -8,9 +8,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sql/archive/${{ version }}.tar.gz
-  sha256: 52099baaddc963c1093fc46415da24c3f1f4652d8168e8cb1f9bb278d281f1c9
-  patches:
-    - 0001-findsocicmake.patch
+  sha256: d9257b243c0c251513b7f82270ade1210544ce1bc5d43e185ba87b806ab9d5bb
 
 build:
   number: ${{ build_number }}
@@ -30,10 +28,10 @@ requirements:
     - nlohmann_json-abi
     - soci-core
     - xeus-zmq >=4.0,<5
-    - xproperty >=0.12.1,<0.13
+    - xproperty >=0.13.1,<0.14
     - xtl
-    - xvega >=0.1.0
-    - xvega-bindings >=0.1.0
+    - xvega >=0.2.0,<0.3
+    - xvega-bindings >=0.2.0,<0.3
   run:
     # xvega and xvega-bindings are missing run exports
     - ${{ pin_compatible('xvega', upper_bound='x.x') }}
